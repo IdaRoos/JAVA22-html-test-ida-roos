@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    /* border: 2px solid red; */
+    display:flex;
+    flex-wrap: row nowrap; /* får det inte plats på raden så kommer flexbox trycka ihop allting */
+    justify-content: center;
+
+
+
+}
+
+a{
+/* border: 1px solid green; */
+/*  flex-basis: 20%; Betyder bredd, mer flexibel än "width" */
+margin: .2rem;
+padding: .8rem;
+text-decoration: none; /* tar bort linjen under länkar */
+color: navy;
+font-family: sans-serif;
+text-transform: uppercase;
+
+transition:border-bottom .2s; /* Förändringen sker gradvis */
+}
+
+a:hover{
+    border-bottom: 3px solid red;
+}
